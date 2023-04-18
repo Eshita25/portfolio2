@@ -279,6 +279,7 @@ align-items: center;
 justify-content: center;
     }
     .line{
+        margin-top : 26px;
         font-size : 32px;
     }
     .info{
@@ -299,7 +300,14 @@ justify-content: center;
         #contact{
             flex-direction: coloumn;
         }
-        
+       .flex{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       } 
+       .ball1{
+        visibility: hidden;
+       }
     }
     .back{
         width:50px;
@@ -331,6 +339,7 @@ justify-content: center;
         border-bottom: white solid 2px ;
         border-left : white solid 2px;
         margin-left : 15px;
+        color: white;
     }
     form{
         margin : auto;
@@ -338,10 +347,10 @@ justify-content: center;
     .flex{
         display: flex;
         align-items: flex-start;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
     .flex2{
-        margin-top: auto;
+        margin-top: 57px;
         border-left: 2px solid white ;
         padding : 5px;
     }
@@ -358,7 +367,10 @@ justify-content: center;
     .flex1{
         border:solid 1px white ;
         margin:auto;
-    
+       text-align: center;
+    }
+    #halwa:hover{
+color : blue ; 
     }
         </style>
 </head>
@@ -366,7 +378,7 @@ justify-content: center;
     <nav >
         <ul>
             <li><a href ="#home" >Home</a></li>
-            <li><a href="#about">About Me</a></li>
+            <li><a href=".about">About Me</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href ="#contact">Contact Me</a></li>
         </ul>
@@ -374,13 +386,13 @@ justify-content: center;
     <div class="back">
     <a href = "#home">
        
-            back
+            ^
     
      </a>
     </div>
     <div id="home">
         <div class="img">
-<img src = "intro.png" alt = "display-picture" width ="100%" height="400px" >
+<img src = "/intro.png" alt = "display-picture" width ="100%" height="400px" >
 <div class="intro-text1">
     WELCOME
    
@@ -397,7 +409,7 @@ justify-content: center;
         <div class="about">
         
         <div class="img1">
-       <img src = "326571681_990665555247533_2958760289417957399_n.jpg" width="100%" height ="342px"> 
+       <img src = "/326571681_990665555247533_2958760289417957399_n.jpg" width="100%" height ="342px"> 
        </div>
        <div class="txt">
         <div class="ball1">
@@ -413,14 +425,14 @@ justify-content: center;
     <div id="skills">
        
        <div class="card">
-        <img src = "ISO_C++_Logo.svg.png" ><br>
+        <img src = "/ISO_C++_Logo.svg.png" ><br>
         <div class="crd-txt">C++</div></div>
        <div class="card">
-        <img src ="c logo.png"><br>
+        <img src ="/c logo.png"><br>
         <div class="crd-txt">C</div>
     </div>
        <div class="card">
-           <img src = "download.png"><br>
+           <img src = "/download.png"><br>
            <div class="crd-txt">HTML</div>
        </div>
        <div class="card">
@@ -431,8 +443,8 @@ justify-content: center;
         <div class="crd-txt">JAVA</div>
     </div> 
     <div class="card">
-        <img src = "download (2).png"><br>
-        JAVASCRIPT
+        <img src = "/download (2).png"><br>
+        <div class = "crd-txt">JAVASCRIPT</div>
     </div> 
     </div>
 <div class="sts">
@@ -453,10 +465,12 @@ justify-content: center;
     <div class="abt">
         <span class="abt1">CON</span>TACT-ME 
     </div>
-    <div class="line">
+   
+    <div class="flex">
+         <div class="line">
     Want to get in touch!?<br>
     Drop a Line...
-    <div class="flex">
+    </div>
     <div class="flex1">
 
     
@@ -465,6 +479,7 @@ justify-content: center;
 <input type = "text" placeholder="contact number" class="enteries">
 <input type = "text" placeholder="email" class="enteries">
 <textarea name="submit " class="enteries" style="height : 35px"></textarea>
+<input type="submit" class="enteries " id ="halwa" style="margin-left : 45px;margin-bottom : 5px ;width:50%;border : solid white 1px">
     </form>
 </div>
     <div class="flex2" style ="margin-left:-50px ;margin-top:20px;padding:5px">
@@ -474,7 +489,7 @@ justify-content: center;
         <span class="data">B204 Sister Nivedita Hall of Residence IIT KGP </span><br>
         <span class="minfo">Email:</span>
         <span class="data">eshita04@gmail.com</span>
-         <div class="logo">
+         <div class="logo "style ="margin-top : 5px;">
     <span class ="logos"><a href="https://www.facebook.com/eshita04" alt="facebook_logo" target="_blank" ><img src="https://cdn-icons-png.flaticon.com/512/106/106897.png" height="30px" width="30px"></a></span>
     <span class = "logos"><a href="https://www.linkedin.com/in/eshita-jain-855568256/" alt="linkedin_logo" target="_blank"><img src="https://www.citypng.com/public/uploads/preview/hd-grey-linkedin-in-icon-text-symbol-sign-png-31623974541hv8yrvid5u.png" height="35px" width="35px"></a></span>
     <span class = "logos"><a href="https://twitter.com/Eshita78" alt="twitter_logo"  ><img src="data:image/jpeg;base64,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" height="32px" width="32px"></a></span>
